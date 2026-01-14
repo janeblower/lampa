@@ -321,7 +321,7 @@
         default: "2a4a0808-81a3-40ae-b0d3-e11335ede616",
       },
       field: {
-        name: "Api Key kinopoiskapiunofficial.tech",
+        name: "API-KEY kinopoiskapiunofficial.tech",
       },
     });
 
