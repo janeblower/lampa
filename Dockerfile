@@ -1,6 +1,3 @@
-FROM nginx:stable-alpine
-COPY . /usr/share/nginx/html
-COPY /config/nginx/default.conf /etc/nginx/conf.d/default.conf
+FROM alpinelinux/darkhttpd:latest
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+COPY . /var/www/localhost/htdocs
