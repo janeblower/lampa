@@ -10,7 +10,7 @@
 ### Docker & Docker Compose
 
 ```bash
-docker run --rm -d --restart unless-stopped --name lampa -p 8080:80 gentslava/lampa
+docker run --rm -d --restart unless-stopped --name lampa -p 8080:80 pull ghcr.io/janeblower/lampa:latest
 ```
 
 #### Docker Compose
@@ -21,7 +21,7 @@ docker run --rm -d --restart unless-stopped --name lampa -p 8080:80 gentslava/la
 version: '3.3'
 services:
     lampa:
-        image: gentslava/lampa
+        image: pull ghcr.io/janeblower/lampa:latest
         container_name: lampa
         ports:
             - 8080:8080
