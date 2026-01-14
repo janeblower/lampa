@@ -21,7 +21,7 @@ docker run --rm -d --restart unless-stopped --name lampa -p 8080:80 pull ghcr.io
 version: '3.3'
 services:
     lampa:
-        image: pull ghcr.io/janeblower/lampa:latest
+        image: ghcr.io/janeblower/lampa:latest
         container_name: lampa
         ports:
             - 8080:8080
