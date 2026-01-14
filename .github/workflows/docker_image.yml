@@ -36,10 +36,9 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: |
-            ghcr.io/${{ env.REG_REPO }}
+          images: ghcr.io/${{ env.REG_REPO }}
           tags: |
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
+            type=raw,value=latest
 
       - name: Build and push
         uses: docker/build-push-action@v6
